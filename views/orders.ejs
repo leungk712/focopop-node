@@ -1,0 +1,89 @@
+<%- include('ordersheader') %>
+
+<div class="wrapper">
+  <div class="container order">
+    <h1>Order Form!</h1>
+    <p>Do you have a birthday party? A business event? Or do you just love our popsicles that much? Place an order ahead of time and we'll have you covered for your special event!</p>
+    <p>***Orders of 20 or more popsicles require a downpayment ahead of time.</p>
+    <form id="form" action="popsiclesorder.html" method="GET">
+      <div class="form-group">
+        <label for="name">Name</label>
+          <input type="text" id="formName" class="form-control" name="name" placeholder="First & Last Name" required />
+        <label for="email" class="pt-3">Email</label>
+          <input type="email" id="formEmail" class="form-control" name="email" placeholder="Email" required />
+        <label for="phoneNumber" class="pt-3">Phone Number</label>
+          <input type="tel" id="formNumber" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" class="form-control" name="phone" placeholder="Phone Number (ex. 3039990000)" required />
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Comments?</label>
+        <textarea class="form-control" id="formTextArea" rows="3" placeholder="Please provide any additional comments that will help us provide the best experience for you!"></textarea>
+      </div>
+      
+      <div class="row flavor-ordering-checkbox">
+        <div class="col-6">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="plum" id="flavor1" />
+            <label class="form-check-label" for="flavor1">Plum</label>
+            <!--<input class="form-quantity" type="number" name="quantity" min="0" max="100" placeholder="0">-->
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="raspberry-lemonade" id="flavor2" />
+            <label class="form-check-label" for="flavor2">Raspberry Lemonade</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="green-tea" id="flavor3" />
+            <label class="form-check-label" for="flavor3">Green Tea</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="chocolate" id="flavor4" />
+            <label class="form-check-label" for="flavor4">Chocolate</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="passionfruit" id="flavor5" />
+            <label class="form-check-label" for="flavor5">Passionfruit</label>
+          </div>
+        </div>
+        
+        <div class="col-6">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="red-ruby-grapefruit" id="flavor6" />
+            <label class="form-check-label" for="flavor6">Texas Ruby Red Grapefruit</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="banana-peanut-butter" id="flavor7" />
+            <label class="form-check-label" for="flavor7">Banana x Peanut Butter</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="pomegranate-mint" id="flavor8" />
+            <label class="form-check-label" for="flavor8">Pomegranate Mint</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="starfruit" id="flavor9" />
+            <label class="form-check-label" for="flavor9">Starfruit</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="salted-caramel" id="flavor10" />
+            <label class="form-check-label" for="flavor10">Salted Caramel</label>
+          </div>
+        </div>
+        <button type="submit" class="submit-order btn btn-lg btn-secondary mb-3" onClick="order()">Place Order!</button>
+      </div>
+    </form>
+  </div>
+  
+  <footer id="contact" class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-12 text-center social">
+        <h2 class="display-4">Contact</h2>
+          <p><i class="fas fa-phone"> (303) 999-9999</i></p>
+          <p><i class="fas fa-at"></i> focopop@gmail.com</p>
+          <p><i class="fab fa-facebook-f"></i> FoCoPopColorado</p>
+          <p><i class="fab fa-twitter"></i> @FoCoPop</p>
+          <p><i class="fab fa-instagram"></i> @FoCoPop</p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+
+<%- include('ordersfooter') %>

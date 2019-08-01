@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background: #cc7896;
+  font-family: 'Shadows Into Light Two', cursive, sans-serif;
+  line-height: normal;
+}
+
+nav {
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-nav .nav-link, nav a {
+  padding-left: 10px;
+}
+
+.nav-link:hover, button, .navbar-brand:hover  {
+  color: #c71585;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid #c17585;
+}
+
+nav, .navbar-brand, nav a {
+  text-transform: uppercase;
+  font-size: 1.625rem;
+  background: #D8BFD8;
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+p, label {
+  font-size: 1.5rem;
+}
+
+#contact {
+  background: #D8BFD8;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#contact h2 {
+  margin-top: 10px;
+}
+
+/* Order Form */
+
+.order {
+  margin-top: 6rem;
+  flex: 1;
+}
+
+.flavor-ordering-checkbox {
+  display: flex;
+  align-items: left;
+}
+
+.form-check {
+  padding: 0.25rem 0;
+  padding-left: 1rem;
+}
+
+.submit-order {
+  margin-left: 1rem;
+}
+
+.form-check-input {
+  vertical-align: bottom;
+}
+
+@media (max-width: 768px) {
+  .nav-link:hover {
+    border-bottom: none;
+  }
+}

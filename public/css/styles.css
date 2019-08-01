@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background: #cc7896;
+  font-family: 'Shadows Into Light Two', cursive, sans-serif;
+  line-height: normal;
+  text-align: center;
+}
+
+nav {
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.navbar, .container-fluid {
+  padding: 0;
+}
+
+.nav-link:hover, button, .navbar-brand:hover {
+  color: #c71585;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid #c71585;
+}
+
+nav, .navbar-brand, nav a {
+  text-transform: uppercase;
+  font-size: 1.625rem;
+  background: #D8BFD8;
+  color: white;
+}
+
+nav a {
+  padding: 0 10px;
+}
+
+#date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  background: #d6b4ce;
+  font-size: 1.25rem;
+}
+
+.section-title {
+  font-size: 3.5rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 10px auto;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+p, li, #contact {
+  font-size: 1.625rem;
+}
+
+#menu {
+  margin-top: 20px;
+}
+
+#menu p {
+  font-size: 1.8rem;
+  margin: 10px auto;
+}
+
+#menu span {
+  margin: 0 12px;
+}
+
+#contact {
+  background: #D8BFD8;
+  margin: 0 auto;
+}
+
+#contact h2 {
+  margin-top: 10px;
+}
+
+.fa-comment {
+  margin-left: 10px;
+  padding-top: 0;
+}
+
+.fa-snowflake {
+  color: white;
+}
+
+.icon {
+  font-size: 3rem;
+}
+
+#locationsHeader {
+  margin-top: 20px;
+}
+
+/* Order Btn */
+
+#order-div {
+  height: 150px;
+  background: #D8BFD8;
+}
+
+button.order-btn {
+  margin-top: 40px;
+  height: 70px;
+  width: 200px;
+  border: 3px solid #2f3640;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.75rem;
+  background: white;
+}
+
+button.order-btn a {
+  text-decoration: none;
+  color: #c71585;
+}
+
+button.order-btn:hover {
+  transform: scale(1.1);
+}
+
+/*button.order-btn a:hover {*/
+/*  color: #fff;*/
+/*  text-decoration: none;*/
+/*}*/
+
+/* -- Media Queries --*/
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 3.5rem;
+  }
+  
+  p, #aboutMe p, #menu p, li {
+    font-size: 1.5rem;
+  }
+  
+  .nav-link:hover {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 576px) {
+  #date {
+    height: 70px;
+    font-size: 1rem;
+  }
+  
+  .section-title {
+    font-size: 2.25rem;
+    font-weight: 600;
+  }
+  
+  p, #aboutMe p, #menu p, li {
+    font-size: 1.25rem;
+  }
+  
+  .icon {
+    font-size: 1.9rem;
+  }
+}
