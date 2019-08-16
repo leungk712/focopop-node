@@ -1,7 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const ejs = require('ejs');
-const modal = require('./Orders');
 const request = require('request');
 const path = require('path');
 
