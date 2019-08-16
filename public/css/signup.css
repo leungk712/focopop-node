@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Handlee&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: #cc7896;
+    height: 100%;
+    width: 100%;
+    font-family: 'Handlee', cursive;
+}
+
+.container-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fa-thumbs-up, .fa-thumbs-down {
+    font-size: 4rem;
+}
+
+.container-message {
+    font-size: 3.75rem;
+}
+
+.return-btn-div {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.return-btn-div a {
+  padding: 1rem 2.5rem;
+  border: 2px solid black;
+  font-size: 1.5rem;
+  background: #fff;
+  color: #c71585;
+  text-decoration: none;
+}
+
+.return-btn-div a:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .container-message {
+        font-size: 3rem;
+    }
+    
+    .return-btn-div {
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 576px) {
+    .container-message {
+        font-size: 2rem;
+    }
+    
+    .return-btn-div {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+}
