@@ -122,12 +122,12 @@ app.post("/", (req, res) => {
   
   request(options, (err, response, body) => {
     if(err) {
-      res.redirect('/');
+      res.send('there was an error signing up!');
     } else {
       if(response.statusCode === 200) {
-        res.render('home');
+        res.send('successfully subscribed');
       } else {
-        res.render('home');
+        res.send('there was an error signing up!');
       }
     }
   });
