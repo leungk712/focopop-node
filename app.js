@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const ejs = require('ejs');
 const request = require('request');
 const path = require('path');
+const dotenv = require('dotenv');
 
 const app = express();
 
@@ -114,7 +115,7 @@ app.post("/", (req, res) => {
     url: 'https://us3.api.mailchimp.com/3.0/lists/4a98c9b6f1',
     method: 'POST',
     headers: {
-      Authorization: 'auth ba07980f5620910dc65d48120fefab83-us3'
+      Authorization: 'auth MAILCHIMP_API_KEY'
     },
     body: postData
   };
