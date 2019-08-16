@@ -1,99 +1,115 @@
 <%- include('header') %>
 
-<div id="date"><%= message %></div>
-
-<div id="home"></div>
-
-<div class="container-fluid">
-  <section id="about">
-    <div class="row align-items-center">
-      <div class="col-lg-6">
-        <div class="row justify-content-center">
-          <div class="col-10">
-            <div class="align-items-center mt-5">
+  <div id="date"><%= message %></div>
+  
+  <div id="home"></div>
+  
+  <div class="container-fluid">
+    <section id="about">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <div class="align-items-center mt-5">
+                <div>
+                  <h2 class="section-title">FoCo Pop!</h2>
+                  <h2>About Us<i class="far fa-comment icon"></i></h2>
+                  <p>Started right here in the heart of Downtown Fort Collins, we are a family friendly popsicle shop dedicated to serving the freshest popsicles using only local ingredients since 2011! We are Colorado proud!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img class="img-fluid" src="imgs/strawberrypop.jpg" alt="strawberry popsicle">
+        </div>
+      </div>
+    </section>
+  
+    <section id="menu">
+      <div class="row align-items-center">
+        <div class="col-md-6 order-2 order-md-1">
+          <img class="img-fluid" src="/imgs/chocolatepop.jpg" alt="chocolate popsicle">
+        </div>
+        <div class="col-md-6 order-1 order-md-2">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-8">
               <div>
-                <h2 class="section-title">FoCo Pop!</h2>
-                <h2>About Us<i class="far fa-comment icon"></i></h2>
-                <p>Started right here in the heart of Downtown Fort Collins, we are a family friendly popsicle shop dedicated to serving the freshest popsicles using only local ingredients since 2011! We are Colorado proud!</p>
+                <h2 class="section-title"><i class="far fa-snowflake icon"></i><span id="spanMenu" class="px-1">Seasonal Menu</span><i class="far fa-snowflake icon"></i></h2>
+                <p>Plum</p>
+                <p>Raspberry Lemonade</p>
+                <p>Green Tea</p>
+                <p>Chocolate</p>
+                <p>Passionfruit</p>
+                <p>Texas Ruby Red Grapefruit</p>
+                <p>Banana x Peanut Butter</p>
+                <p>Pomegranate Mint</p>
+                <p>Starfruit</p>
+                <p>Salted Caramel</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
-        <img class="img-fluid" src="imgs/strawberrypop.jpg" alt="strawberry popsicle">
-      </div>
-    </div>
-  </section>
-
-  <section id="menu">
-    <div class="row align-items-center">
-      <div class="col-md-6 order-2 order-md-1">
-        <img class="img-fluid" src="/imgs/chocolatepop.jpg" alt="chocolate popsicle">
-      </div>
-      <div class="col-md-6 order-1 order-md-2">
-        <div class="row justify-content-center">
-          <div class="col-10 col-lg-8">
-            <div>
-              <h2 class="section-title"><i class="far fa-snowflake icon"></i><span id="spanMenu" class="px-1">Seasonal Menu</span><i class="far fa-snowflake icon"></i></h2>
-              <p>Plum</p>
-              <p>Raspberry Lemonade</p>
-              <p>Green Tea</p>
-              <p>Chocolate</p>
-              <p>Passionfruit</p>
-              <p>Texas Ruby Red Grapefruit</p>
-              <p>Banana x Peanut Butter</p>
-              <p>Pomegranate Mint</p>
-              <p>Starfruit</p>
-              <p>Salted Caramel</p>
+    </section>
+    <section id="locations">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-12">
+              <h2 id="locationsHeader" class="section-title"><i class="fas fa-map-pin icon"></i> Locations</h2>
+                <ul>
+                  <li>Old Town / Fort Collins</li>
+                  <li>16th Street Mall / Denver</li>
+                  <li>Union Station / Denver</li>
+                  <li>Pearl Street Mall / Boulder</li>
+                  <li>Southlands Mall / Aurora</li>
+                </ul>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section id="locations">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-12">
-            <h2 id="locationsHeader" class="section-title"><i class="fas fa-map-pin icon"></i> Locations</h2>
-              <ul>
-                <li>Old Town / Fort Collins</li>
-                <li>16th Street Mall / Denver</li>
-                <li>Union Station / Denver</li>
-                <li>Pearl Street Mall / Boulder</li>
-                <li>Southlands Mall / Aurora</li>
-              </ul>
-          </div>
+        <div class="col-md-6 mb-0">
+          <img class="img-fluid" src="imgs/coconutpop.jpeg" alt="coconut popsicle">
         </div>
       </div>
-      <div class="col-md-6 mb-0">
-        <img class="img-fluid" src="imgs/coconutpop.jpeg" alt="coconut popsicle">
-      </div>
-    </div>
-  </section>
-  
-  <section id="order-div">
-      <button class="order-btn"><a href="/orders">Order</a></button>
-  </section>
-
-  <footer id="contact">
-    <div class="row align-items-center">
-      <div class="col-12 social">
-        <h2 class="section-title">Contact</h2>
-          <div class="contact-info-list">
-            <p><i class="fas fa-phone"> (303) 999-9999</i></p>
-            <p><i class="fas fa-at"></i> focopop@gmail.com</p>
-            <p><i class="fab fa-facebook-f"></i> FoCoPopColorado</p>
-            <p><i class="fab fa-twitter"></i> @FoCoPop</p>
-            <p><i class="fab fa-instagram"></i> @FoCoPop</p>
+    </section>
+    
+    <div class="sign-up-form-container">
+      <div class="sign-up-form">
+        <h1 class="sign-up-form-title">Sign up for our monthly newsletter!</h1>
+        <form id="sign-up" action="/" method="POST">
+          <div class="form-group">
+            <input type="text" name="firstName" id="first-name" class="form-control" placeholder="First Name" required/>
           </div>
+          <div class="form-group">
+            <input type="text" name="lastName" id="last-name" class="form-control" placeholder="Last Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" id="email" class="form-control" placeholder="Email" required/>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </div>
-  </footer>
-</div>
-
-
+    
+    <form id="order-div" action="/orders" method="GET">
+        <button class="order-btn">Order</button>
+    </form>
+  
+    <footer id="contact">
+      <div class="row align-items-center">
+        <div class="col-12 social">
+          <h2 class="section-title">Contact</h2>
+            <div class="contact-info-list">
+              <p><i class="fas fa-phone"> (303) 999-9999</i></p>
+              <p><i class="fas fa-at"></i> focopop@gmail.com</p>
+              <p><i class="fab fa-facebook-f"></i> FoCoPopColorado</p>
+              <p><i class="fab fa-twitter"></i> @FoCoPop</p>
+              <p><i class="fab fa-instagram"></i> @FoCoPop</p>
+            </div>
+        </div>
+      </div>
+    </footer>
+  </div>
 
 <%- include('footer') %>
